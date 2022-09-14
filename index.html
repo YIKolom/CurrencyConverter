@@ -1,12 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CurrencyConverter</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
+
 <body>
     
+    <div class="content">
+        <h1>Currency Converter</h1>
+
+        <form onsubmit="calculate(); return false;">
+
+            <div>
+                <input required class="numinput" type="text" id="btcPrice" placeholder="Enter number" />
+                <label class="numlabel" for="btcPrice">What is Bitcoin price today?</label>
+            </div>
+
+            <div>
+                <input required class="numinput" type="text" id="usdAmount" placeholder="Enter number" />
+                <label class="numlabel" for="usdAmount">How much $ do you have?</label>
+            </div>
+
+            <button class="btncalculate" type="submit">
+                Calculate
+            </button>
+
+            <div id="resultarea"></div>
+
+        </form>
+    </div>
+
 </body>
+
 </html>
